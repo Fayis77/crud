@@ -1,0 +1,23 @@
+<section class="container">
+  <aside class="box">
+    <aside class="header">
+      <h1>Contact List</h1>
+
+    <button [routerLink]="['add']" >add</button>
+    </aside>
+    <div class="body" *ngFor="let item of contactList; let i =index" >
+      
+        <h1>{{item.name}}</h1>
+        <h1>{{item.phone}}</h1>
+        <h1>{{item.Dob}}</h1>
+      
+      <div class="box-2">
+        <button (click)="editContact(i)">Edit</button>
+        <button (click)="deleteContact(i)" >Delete</button>
+      </div>
+        
+      
+      
+    </div>
+  </aside>
+</section>

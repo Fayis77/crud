@@ -1,0 +1,22 @@
+<div class="container">
+    <aside class="box">
+        <aside class="box-1">
+            <label for="">Name: </label>
+            <input type="text" [(ngModel)]="name">
+        </aside>
+        <aside class="box-1">
+            <label for="">phone:</label>
+            <input type="text" [(ngModel)]="phone">
+        </aside>
+        <aside class="box-1">
+            <label for="">Dob:  </label>
+            <input class="dob" type="date" [(ngModel)]="Dob">
+        </aside>
+        <aside class="btn">
+            <button (click)="submit()">Submit</button>
+            <button  [routerLink]="['/']" >cancel</button>
+        </aside>
+        
+    </aside>
+    
+</div>
